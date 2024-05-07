@@ -10,8 +10,9 @@ const LandingPage = () => {
     const textContainer = document.querySelector('.text-container');
 
     setTimeout(() => {
-      logoContainer.style.top = '10%';
-      logoContainer.style.transform = 'scale(1.08)';
+      logoContainer.style.top = 'calc(5%)';
+      logoContainer.style.transform = 'scale(0.8)';
+      // logoContainer.style.position = 'fixed';
       textContainer.style.opacity = '1';
     }, 1000);
   }, []);
@@ -23,9 +24,9 @@ const LandingPage = () => {
   };
   
   return ( 
-    <div class='px-5 pt-10'>
+    <div className='px-5 pt-10'>
       <div className='flex flex-col items-center space-y-5 px-10'>
-        <div class='logo-container'>
+        <div className='logo-container'>
           <div className="flex justify-center top-5">
               <img className="w-9/12 lg:w-11/12 h-auto" src="https://councilpcshsst.vercel.app/logo.svg" alt="School Logo" />
           </div>

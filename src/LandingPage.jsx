@@ -10,9 +10,8 @@ const LandingPage = () => {
     const textContainer = document.querySelector('.text-container');
 
     setTimeout(() => {
-      logoContainer.style.top = 'calc(5%)';
-      logoContainer.style.transform = 'scale(0.8)';
-      // logoContainer.style.position = 'fixed';
+      logoContainer.style.top = '10%';
+      logoContainer.style.transform = 'scale(1.08)';
       textContainer.style.opacity = '1';
     }, 1000);
   }, []);
